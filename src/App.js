@@ -13,7 +13,7 @@ class App extends Component {
         <div className="container">
           <div className="intro">
             <div className="left">
-              <span className="tag">Nuture Fascination.</span>
+              <span className="tag">Nurture Fascination.</span>
             </div>
             <div className="right">
               <h1>Digital Builders.</h1>
