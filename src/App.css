@@ -33,7 +33,7 @@ span {
 .container .intro span {
   position: relative;
   font-weight: 600;
-  width: 135px;
+  width: 141px;
   display: flex;
 }
 .container .intro span:before {
