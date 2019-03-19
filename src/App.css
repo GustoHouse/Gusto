@@ -1,33 +1,122 @@
-.App {
-  text-align: center;
+.App-header {
+
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  margin: 50px;
+  max-width: 150px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1,
+p,
+span {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p,
+span {
+  line-height: 1.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container .intro {
+  max-width: 750px;
+  display: flex;
+  margin-top: 100px;
+}
+
+.container .intro span {
+  position: relative;
+  font-weight: 600;
+  width: 135px;
+  display: flex;
+}
+.container .intro span:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #cb3f32;
+}
+
+.container .intro .right {
+  margin-left: 20px;
+}
+
+.container .intro .right h1 {
+  font-size: 60px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.container .projects {
+  margin: 200px 0;
+}
+
+.container .projects .project {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container .projects .project .image {
+  width: 60%;
+}
+
+.container .projects .project .image img {
+  width: 100%;
+}
+
+.container .projects .project .text {
+  width: 30%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container .projects .project .text .tag {
+  color: #6d6d6d;
+  font-size: 14px;
+  position: relative;
+  padding-top: 16px;
+}
+
+.container .projects .project .text .tag:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #cb3f32;
+}
+
+.container .projects .project .text h2 {
+  font-size: 40px;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.container .projects .project .text p {
+  margin-bottom: 24px;
+}
+
+.container .projects .project .text a {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  align-self: baseline;
+}
+
+.container .projects .project .text a:hover {
+  color: #cb3f32;
 }
