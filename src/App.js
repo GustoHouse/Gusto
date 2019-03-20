@@ -4,6 +4,11 @@ import apexScreenshot from './apex-project-screenshot.png';
 import './App.css';
 
 class App extends Component {
+  
+  getYear() {
+    return new Date().getFullYear();
+  }
+  
   render() {
     return (
       <div className="App">
@@ -29,12 +34,15 @@ class App extends Component {
               <div className="text">
                 <span className="tag">Application</span>
                 <h2>Apex Tracker</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut odio sit amet lorem rutrum finibus.</p>
-                <a href="#">Explore.</a>
+                <p>Apex Legends has taken the gaming world by storm. We've taken it upon ourselves to create a companion app worthy of the greatest Legends. Introducing Apex Tracker, a place where you can squad up with others, look up yours and other player's stats*, and keep up to date with Apex Legends news. <br/><br/><i>(*stats coming soon)</i></p>
+                <a href="https://www.reddit.com/r/apextracker/" target="_blank">Explore.</a>
               </div>
             </div>
           </div>
         </div>
+        <footer className="app-footer">
+          © {this.getYear()} Gusto Creative House, LLC
+        </footer>
       </div>
     );
   }

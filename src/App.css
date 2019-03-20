@@ -19,14 +19,13 @@ span {
 }
 
 .container {
-  width: 90%;
+  width: 84%;
   max-width: 1200px;
   margin: auto;
 }
 
 .container .intro {
   max-width: 750px;
-  display: flex;
   margin-top: 100px;
 }
 
@@ -46,27 +45,33 @@ span {
   background-color: #cb3f32;
 }
 
-.container .intro .right {
-  margin-left: 20px;
-}
-
 .container .intro .right h1 {
   font-size: 60px;
   margin: 15px 0;
   font-weight: 600;
 }
 
-.container .projects {
-  margin: 200px 0;
+@media(min-width:768px) {
+
+  .container .intro {
+    max-width: 750px;
+    display: -webkit-flex;
+    display: flex;
+    margin-top: 100px;
+  }
+  
+  .container .intro .right {
+    margin-left: 20px;
+  }
+
 }
 
-.container .projects .project {
-  display: flex;
-  flex-wrap: nowrap;
+.container .projects {
+  margin: 100px 0;
 }
 
 .container .projects .project .image {
-  width: 60%;
+  width: 100%;
 }
 
 .container .projects .project .image img {
@@ -74,11 +79,27 @@ span {
 }
 
 .container .projects .project .text {
-  width: 30%;
-  margin-left: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: 50px;
+}
+
+@media(min-width:768px) {
+  .container .projects .project {
+    display: flex;
+    margin: 200px 0;
+  }
+
+  .container .projects .project .image {
+    width: 60%;
+  }
+
+  .container .projects .project .text {
+    width: 30%;
+    margin-top: 0;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .container .projects .project .text .tag {
@@ -119,4 +140,11 @@ span {
 
 .container .projects .project .text a:hover {
   color: #cb3f32;
+}
+
+.app-footer {
+  background-color: #171718;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
