@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
+import Header from './Components/Header/header';
+import Background from './Components/Background/background';
+import Banner from './Components/Banner/banner';
+import './style.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        New Site Coming Soon Today
+      <div>
+        
+        <Background />
+
+        <Header />
+
+        <Banner />
+
       </div>
     );
   }

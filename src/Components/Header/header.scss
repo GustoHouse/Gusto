@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+header{
+    position:fixed;
+    top:45px;
+    left:45px;
+
+    .logo{
+
+        svg{
+            max-height: 200px;
+            max-width: 120px;
+            height: 20vw;
+            width: 12vw;
+
+            .face{
+                fill: $yellow;
+            }
+        }
+
+    }
+}
