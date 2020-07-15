@@ -27,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family:'Poppins', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -48,4 +49,18 @@ body{
 	width:100%;
 	min-height:100vh;
 	overflow-x:hidden;
+}
+
+h1,h2,h3,h4,h5{
+	font-family:'Bebas Neue', serif;
+}
+
+.btn{
+	background:$yellow;
+	border:3px solid $black;
+	padding:8px 20px;
+	-webkit-appearance: none;
+	text-transform: lowercase;
+	font-weight:600;
+	font-size:20px;
 }

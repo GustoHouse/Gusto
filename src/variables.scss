@@ -5,3 +5,56 @@ $teal: #2DDAD3;
 $green: #5CFF9C;
 $blue: #5980F7;
 $pink: #FF0255;
+
+/* ANIMATIONS */
+@keyframes DROPIN {
+  from {opacity:0;transform:translate3d(0,-1vw,0)}
+  to {opacity:1;transform:translate3d(0,0,0)}
+}
+
+@keyframes ANGLEIN {
+  from {opacity:0;transform:translate3d(-1vw,-1vw,0)}
+  to {opacity:1;transform:translate3d(0,0,0)}
+}
+
+@keyframes MOBILEPINKTEXTSHADOW{
+  from{
+    text-shadow:0px;
+  }
+  to{
+    text-shadow:-4px -4px 0px $pink, 
+                -3px -3px 0px $pink, 
+                -2px -2px 0px $pink, 
+                -1px -1px 0px $pink;
+  }
+}
+
+@keyframes PINKTEXTSHADOW{
+  from{
+    text-shadow:0px;
+  }
+  to{
+    text-shadow:-8px -8px 0px $pink, 
+                -7px -7px 0px $pink, 
+                -6px -6px 0px $pink, 
+                -5px -5px 0px $pink, 
+                -4px -4px 0px $pink, 
+                -3px -3px 0px $pink, 
+                -2px -2px 0px $pink, 
+                -1px -1px 0px $pink;
+  }
+}
+
+@keyframes BLACKBOXSHADOW{
+  from{
+    box-shadow:0px;
+  }
+  to{
+    box-shadow:-6px -6px 0px $black, 
+                -5px -5px 0px $black, 
+                -4px -4px 0px $black, 
+                -3px -3px 0px $black, 
+                -2px -2px 0px $black, 
+                -1px -1px 0px $black;
+  }
+}

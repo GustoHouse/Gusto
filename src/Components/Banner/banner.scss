@@ -1,5 +1,103 @@
+@import '../../variables.scss';
+
 .banner {
     position: relative;
     width:100%;
     min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color:$black;
+        
+        span{
+            display:block;
+            font-size:10vw;
+            animation: DROPIN 1s 500ms ease backwards;
+        }
+
+        strong{
+            display: block;
+            font-size: 22vw;
+            position: relative;
+            top: -3.5vw;
+            animation: ANGLEIN 1s 1s ease backwards, MOBILEPINKTEXTSHADOW 1s ease 1s both;
+            left: 3vw;
+        }
+    }
+
+    .languages{
+        svg{
+            height:6vw;
+            max-height:35px;
+            margin:0 3vw;
+        }
+
+        svg:nth-of-type(1){
+            animation: DROPIN 500ms 1.5s ease backwards;
+        }
+        svg:nth-of-type(2){
+            animation: DROPIN 500ms 1.75s ease backwards;
+        }
+        svg:nth-of-type(3){
+            animation: DROPIN 500ms 2s ease backwards;
+        }
+    }
+
+    p {
+        width: 75%;
+        max-width: 300px;
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        font-weight: 500;
+        animation: DROPIN 1s 2.5s ease backwards;
+    }
+
+    .btn{
+        margin-top:45px;
+        animation: ANGLEIN 1s 3s ease backwards, BLACKBOXSHADOW 1s ease 3s both;
+    }
+}
+
+@media(min-width:1024px){
+
+    .banner{
+        h1{
+            span{
+                font-size:7vw;
+            }
+            strong{
+                animation: ANGLEIN 1s 1s ease backwards, PINKTEXTSHADOW 1s ease 1s both;
+                font-size:15.5vw;
+                top: -2vw;
+            }
+        }
+
+        .languages{
+            svg{
+                margin:0 15px;
+            }
+        }
+    }
+
+}
+
+@media(min-width:1280px){
+
+    .banner{
+        h1{
+            span{
+                font-size:90px;
+            }
+            strong{
+                font-size:200px;
+                top: -30px;
+            }
+        }
+    } 
+
 }
