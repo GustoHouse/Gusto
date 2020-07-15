@@ -39,10 +39,10 @@
             animation: DROPIN 500ms 1.5s ease backwards;
         }
         svg:nth-of-type(2){
-            animation: DROPIN 500ms 1.75s ease backwards;
+            animation: DROPIN 500ms 1.65s ease backwards;
         }
         svg:nth-of-type(3){
-            animation: DROPIN 500ms 2s ease backwards;
+            animation: DROPIN 500ms 1.7s ease backwards;
         }
     }
 
@@ -54,12 +54,12 @@
         line-height: 24px;
         text-align: center;
         font-weight: 500;
-        animation: DROPIN 1s 2.5s ease backwards;
+        animation: DROPIN 1s 1.8s ease backwards;
     }
 
     .btn{
         margin-top:45px;
-        animation: ANGLEIN 1s 3s ease backwards, BLACKBOXSHADOW 1s ease 3s both;
+        animation: ANGLEIN 1s 1.9s ease backwards, BLACKBOXSHADOW 1s ease 1.9s both;
     }
 }
 
@@ -96,6 +96,7 @@
             strong{
                 font-size:200px;
                 top: -30px;
+                left: 45px; 
             }
         }
     } 
