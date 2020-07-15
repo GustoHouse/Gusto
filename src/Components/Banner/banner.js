@@ -18,7 +18,7 @@ class Banner extends Component {
 
           <p>As internet architects, we design and build robust websites, online stores, web and mobile apps with passion and vigor.</p>
 
-          <a href="#start" className="btn">start buliding</a>
+          <a href="#start" className="btn">start building</a>
 
         </div>
       );
