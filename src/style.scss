@@ -51,9 +51,57 @@ body{
 	overflow-x:hidden;
 }
 
+/* HEADERS */
+
 h1,h2,h3,h4,h5{
 	font-family:'Bebas Neue', serif;
 }
+
+h1, h2{
+	color:$black;
+	
+	span{
+		display:block;
+		font-size:10vw;
+	}
+
+	strong{
+		display: block;
+		font-size: 22vw;
+		position: relative;
+		top: -3.5vw;
+		left: 3vw;
+	}
+}
+
+@media(min-width:1024px){
+	h1, h2{
+		span{
+			font-size:7vw;
+		}
+		strong{
+			font-size:15.5vw;
+			top: -2vw;
+		}
+	}
+}
+
+@media(min-width:1280px){
+
+	h1, h2{
+		span{
+			font-size:90px;
+		}
+		strong{
+			font-size:200px;
+			top: -30px;
+			left: 45px; 
+		}
+	}
+
+}
+
+/* BUTTONS */
 
 .btn{
 	background:$yellow;
@@ -82,4 +130,31 @@ h1,h2,h3,h4,h5{
 		transform:translate3d(-5px,-5px,0);
 		color: $white;
 	}
+}
+
+/* SECTIONS */
+
+section{
+	position: relative;
+    width:100%;
+    min-height:100vh;
+}
+
+@media(min-width:1440px){
+
+	section.split{
+		display:flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	section.split .left,
+	section.split .right{
+		width:50%;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 }

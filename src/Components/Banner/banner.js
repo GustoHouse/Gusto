@@ -4,7 +4,7 @@ import './banner.scss';
 class Banner extends Component {
     render() {
       return (
-        <div className="banner">
+        <section className="banner">
           <h1>
             <span>Build Fascinating Things</span>
             <strong>With Gusto</strong>
@@ -20,7 +20,7 @@ class Banner extends Component {
 
           <a href="#start" className="btn">start building</a>
 
-        </div>
+        </section>
       );
     }
   }
