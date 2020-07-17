@@ -40,6 +40,7 @@ class Conversation extends Component {
       options: {
         submitCallback: this.submitCallback,
         robotImage: G,
+        preventAutoFocus: true,
         flowStepCallback: this.processMessages
       },
       tags: this.formFields
