@@ -12,5 +12,23 @@
         left:0;
         height:95vh;
         z-index: 1;
+
+        *{
+            transition:opacity 500ms ease;
+        }
+
+        .yellow-fade{
+            opacity:0;
+        }
+    }
+}
+
+html.viewing-convo{
+    .background{
+        .bg-teal{
+            .yellow-fade{
+                opacity:1;
+            }
+        }
     }
 }

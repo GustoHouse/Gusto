@@ -7,6 +7,8 @@ class Conversation extends Component {
   constructor(props) {
     super(props);
 
+    this.convoStarted = false;
+
     this.formFields = [
       {
           'tag': 'cf-robot-message',
@@ -36,17 +38,40 @@ class Conversation extends Component {
   }
   
   componentDidMount() {
+
     this.cf = ConversationalForm.startTheConversation({
       options: {
         submitCallback: this.submitCallback,
         robotImage: G,
-        preventAutoFocus: true,
+        preventAutoFocus: false,
+        preventAutoStart: true,
+        userInterfaceOptions: {
+          controlElementsInAnimationDelay: 250,
+          robot: {
+              robotResponseTime: 1000,
+              chainedResponseTime: 1000
+          }
+        },
         flowStepCallback: this.processMessages
       },
       tags: this.formFields
     });
 
     this.elem.appendChild(this.cf.el);
+
+    // starting the form on scroll
+    let theprops = this.props;
+    let convo = this.cf;
+
+    window.addEventListener('scroll', function(e) {
+      if( theprops.isvisible( document.getElementById("convo-header") ) ){
+        if(!this.convoStarted){
+          this.convoStarted = true;
+          convo.start();
+        }
+      }
+    });
+
   }
 
   processMessages = (details, success, error) =>{

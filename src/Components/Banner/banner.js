@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import './banner.scss';
 
 class Banner extends Component {
-    render() {
+  render() {
       return (
         <section className="banner">
-          <h1>
+          <h1 id="banner-header">
             <span>Build Fascinating Things</span>
             <strong>With Gusto</strong>
           </h1>
