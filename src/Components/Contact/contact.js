@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { ConversationalForm } from 'conversational-form';
 import Conversation from './form';
 import './contact.scss';
 
@@ -15,6 +14,7 @@ class Contact extends Component {
                         <span>Now It's Time To</span>
                         <strong>Say Hello</strong>
                     </h2>
+                      <p>We’d love to hear about what problems you need solving, what goals you’d like to achieve, what projects you'd love to build, and what your favorite flavor of pie is.</p>
                 </div>
 
             </div>

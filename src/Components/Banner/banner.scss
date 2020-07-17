@@ -7,6 +7,8 @@
     align-items: center;
 
     h1{
+        margin-top:60px; 
+
         span{
             animation: DROPIN 1s 500ms ease backwards;
         }
@@ -35,13 +37,9 @@
     }
 
     p {
-        width: 75%;
         max-width: 300px;
         margin-top: 30px;
-        font-size: 18px;
-        line-height: 24px;
         text-align: center;
-        font-weight: 500;
         animation: DROPIN 1s 1.8s ease backwards;
     }
 

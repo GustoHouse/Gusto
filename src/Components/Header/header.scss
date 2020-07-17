@@ -2,11 +2,23 @@
 
 header{
     position:fixed;
-    top:45px;
-    left:45px;
     z-index: 100;
 
+    .bg-pink{
+        height: 30vw;
+        position: absolute;
+        max-height: 230px;
+        top:0;
+        left:0;
+        z-index:2;
+    }
+
     .logo{
+        display:block;
+        margin-top:7vw;
+        margin-left:7vw;
+        z-index: 3;
+        position:relative;
 
         svg{
             max-height: 200px;
@@ -40,4 +52,15 @@ header{
         }
 
     }
+}
+
+@media(min-width:1024px){
+
+    header{
+        .logo{
+            margin-top:45px;
+            margin-left:45px;
+        }
+    }
+
 }

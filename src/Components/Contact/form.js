@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {ConversationalForm} from 'conversational-form';
+import { ConversationalForm } from 'conversational-form';
+import G from '../../Assets/Images/g.svg';
 import './form.scss';
 
 class Conversation extends Component {
@@ -7,22 +8,28 @@ class Conversation extends Component {
     super(props);
 
     this.formFields = [
-        {
-            'tag': 'cf-robot-message',
-            'cf-questions': 'Hello friend!'
-        },
-        {
-            'tag': 'input',
-            'type': 'text',
-            'name': 'movie',
-            'cf-questions': 'To kick off this wonderful conversation, how about a fun question! <strong>What is one of your favorite movies?</strong>'
-        },
-        {
-            'tag': 'input',
-            'type': 'text',
-            'name': 'name',
-            'cf-questions': 'Cool! Now that the movie talk is over, we would like to know how to address you. <strong>Mind telling us your name?</strong>' 
-        }
+      {
+          'tag': 'cf-robot-message',
+          'cf-questions': 'Hello friend!'
+      },
+      {
+          'tag': 'input',
+          'type': 'text',
+          'name': 'movie',
+          'cf-questions': 'To kick off this wonderful conversation, how about a fun question! <strong>What is one of your favorite movies?</strong>'
+      },
+      {
+          'tag': 'input',
+          'type': 'text',
+          'name': 'name',
+          'cf-questions': 'Cool! Now that the movie talk is over, we would like to know how to address you. <strong>Mind telling us your name?</strong>' 
+      },
+      {
+        'tag': 'input',
+        'type': 'text',
+        'name': 'company',
+        'cf-questions': 'Hello! Next, what company do you work for if you dont mind us asking?'
+      }
     ];
     
     this.submitCallback = this.submitCallback.bind(this);
@@ -32,6 +39,7 @@ class Conversation extends Component {
     this.cf = ConversationalForm.startTheConversation({
       options: {
         submitCallback: this.submitCallback,
+        robotImage: G,
         preventAutoFocus: true,
         flowStepCallback: this.processMessages
       },
@@ -43,21 +51,26 @@ class Conversation extends Component {
 
   processMessages = (details, success, error) =>{
 
-    let content = details.tag.text;
+    let content = details.text;
 
     switch(details.tag.name){
 
-        case 'movie':
+      case 'movie':
 
-            if(content == 'The Empire Strikes Back' || content == 'The Empire Strikes Back' || content == 'Return of the Jedi'){
-                this.cf.addRobotChatResponse("What an excellent answer. We're big Star Wars fans ourselves.");
-            }
+        if(content === 'Star Wars' || content === 'The Empire Strikes Back' || content === 'Return of the Jedi'){
+          this.cf.addRobotChatResponse("What an excellent answer. We're big Star Wars fans ourselves.");
+        }
 
-            break;
+        break;
 
-        case 'name':
+      case 'name':
 
-            break;
+        break;
+      
+      default:
+
+        break;
+      
     }
 
     success();
