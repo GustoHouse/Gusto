@@ -3,10 +3,6 @@ import Conversation from './form';
 import './contact.scss';
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <section className="split contact">
