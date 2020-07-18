@@ -46,12 +46,11 @@ class Conversation extends Component {
         preventAutoFocus: false,
         preventAutoStart: true,
         userInterfaceOptions: {
-          controlElementsInAnimationDelay: 250,
           robot: {
-              robotResponseTime: 1000,
-              chainedResponseTime: 1000
+              robotResponseTime: 1000
           }
         },
+        animationsEnabled: true,
         flowStepCallback: this.processMessages
       },
       tags: this.formFields

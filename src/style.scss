@@ -115,6 +115,7 @@ h1, h2{
 		strong{
 			font-size:160px;
 			top:-25px;
+			left:45px;
 		}
 	}
 
@@ -173,21 +174,40 @@ section{
 
 	section{
 		padding:0;
+
+		&.split{
+			display:flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			.left, .right{
+				width:50%;
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;		
+			}
+		}
+
 	}
 
-	section.split{
-		display:flex;
-		flex-direction: row;
-		justify-content: space-around;
-	}
+}
 
-	section.split .left,
-	section.split .right{
-		width:50%;
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
+@media(min-width:1920px){
 
+	section{
+
+		&.split{
+
+			.left{
+				padding-left:12vw;		
+			}
+			.right{
+				padding-right:12vw;
+			}
+
+		}
+
+	}
+	
 }
