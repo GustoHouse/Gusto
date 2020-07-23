@@ -9,15 +9,43 @@
         strong{
             animation: ANGLEIN 1s 1s ease both, MOBILEBLUETEXTSHADOW 1s ease 1s both;
         }
-    }    
+    } 
+    
+    &:after{
+        content:'';
+        display:block;
+        clear:both;
+    }
+}
+
+@media(min-width:768px){
+    .testimonies{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+
+        .testimony{
+            float:none;
+            max-width:450px;
+            width:40vw;
+        }
+    }
 }
 
 @media(min-width:1024px){
     .testimonials{
         h2{
+            display:block;
+            float:right;
+            margin-right:45px;
+
             strong{
                 animation: ANGLEIN 1s 1s ease backwards, BLUETEXTSHADOW 1s ease 1s both;
             }
+        }
+
+        .testimonies{
+            clear:both;
         }
     }
 }

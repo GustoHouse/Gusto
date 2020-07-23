@@ -52,18 +52,26 @@ class Testimonials extends Component {
     return (
       <section className="testimonials">
 
-        <h2 id="testimonials-header">
-            <span>Let Others</span>
-            <strong>Tell You</strong>
-        </h2>
+        <div className="container">
 
-        <Testimony content={gainesway} />
+          <h2 id="testimonials-header">
+              <span>Let Others</span>
+              <strong>Tell You</strong>
+          </h2>
 
-        <Testimony content={healthcarousel} />
+          <div class="testimonies">
 
-        <Testimony content={orr} />
+            <Testimony content={gainesway} />
 
-        <Testimony content={zimmer} />
+            <Testimony content={orr} />
+
+            <Testimony content={healthcarousel} />
+            
+            <Testimony content={zimmer} />
+            
+          </div>
+          
+        </div>
 
       </section>
     );
