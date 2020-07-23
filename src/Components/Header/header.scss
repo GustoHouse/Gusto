@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 header{
-    position:fixed;
+    position:absolute;
     z-index: 100;
 
     .bg-pink{
@@ -57,6 +57,8 @@ header{
 @media(min-width:1024px){
 
     header{
+        position:fixed;
+        
         .logo{
             margin-top:45px;
             margin-left:45px;
