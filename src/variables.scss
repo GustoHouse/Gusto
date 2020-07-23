@@ -7,6 +7,24 @@ $green: #5CFF9C;
 $blue: #5980F7;
 $pink: #FF0255;
 
+@function mobileTextShadow($color){
+  @return -4px -4px 0px $color, 
+  -3px -3px 0px $color, 
+  -2px -2px 0px $color, 
+  -1px -1px 0px $color;
+}
+
+@function textShadow($color){
+  @return -8px -8px 0px $color, 
+  -7px -7px 0px $color, 
+  -6px -6px 0px $color, 
+  -5px -5px 0px $color, 
+  -4px -4px 0px $color, 
+  -3px -3px 0px $color, 
+  -2px -2px 0px $color, 
+  -1px -1px 0px $color;
+}
+
 /* ANIMATIONS */
 @keyframes DROPIN {
   from {opacity:0;transform:translate3d(0,-1vw,0)}
@@ -23,10 +41,7 @@ $pink: #FF0255;
     text-shadow:0px;
   }
   to{
-    text-shadow:-4px -4px 0px $pink, 
-                -3px -3px 0px $pink, 
-                -2px -2px 0px $pink, 
-                -1px -1px 0px $pink;
+    text-shadow:mobileTextShadow($pink);
   }
 }
 
@@ -35,14 +50,7 @@ $pink: #FF0255;
     text-shadow:0px;
   }
   to{
-    text-shadow:-8px -8px 0px $pink, 
-                -7px -7px 0px $pink, 
-                -6px -6px 0px $pink, 
-                -5px -5px 0px $pink, 
-                -4px -4px 0px $pink, 
-                -3px -3px 0px $pink, 
-                -2px -2px 0px $pink, 
-                -1px -1px 0px $pink;
+    text-shadow:textShadow($pink);
   }
 }
 
@@ -51,10 +59,7 @@ $pink: #FF0255;
     text-shadow:0px;
   }
   to{
-    text-shadow:-4px -4px 0px $yellow, 
-                -3px -3px 0px $yellow, 
-                -2px -2px 0px $yellow, 
-                -1px -1px 0px $yellow;
+    text-shadow:mobileTextShadow($yellow);
   }
 }
 
@@ -63,14 +68,25 @@ $pink: #FF0255;
     text-shadow:0px;
   }
   to{
-    text-shadow:-8px -8px 0px $yellow, 
-                -7px -7px 0px $yellow, 
-                -6px -6px 0px $yellow, 
-                -5px -5px 0px $yellow, 
-                -4px -4px 0px $yellow, 
-                -3px -3px 0px $yellow, 
-                -2px -2px 0px $yellow, 
-                -1px -1px 0px $yellow;
+    text-shadow:textShadow($yellow);
+  }
+}
+
+@keyframes MOBILEBLUETEXTSHADOW{
+  from{
+    text-shadow:0px;
+  }
+  to{
+    text-shadow:mobileTextShadow($blue);
+  }
+}
+
+@keyframes BLUETEXTSHADOW{
+  from{
+    text-shadow:0px;
+  }
+  to{
+    text-shadow:textShadow($blue);
   }
 }
 
@@ -85,6 +101,20 @@ $pink: #FF0255;
                 -3px -3px 0px $black, 
                 -2px -2px 0px $black, 
                 -1px -1px 0px $black;
+  }
+}
+
+@keyframes BLUEBOXSHADOW{
+  from{
+    box-shadow:0px;
+  }
+  to{
+    box-shadow:-6px -6px 0px $blue, 
+                -5px -5px 0px $blue, 
+                -4px -4px 0px $blue, 
+                -3px -3px 0px $blue, 
+                -2px -2px 0px $blue, 
+                -1px -1px 0px $blue;
   }
 }
 

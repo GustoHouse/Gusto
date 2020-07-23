@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.testimony{
+    background:#fff;
+    padding:30px;
+    margin-top:30px;
+    position:relative;
+    animation: BLUEBOXSHADOW 1s ease both;
+
+    svg{
+        position: absolute;
+        top: -17px;
+        right: -10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    p{
+        font-size:14px;
+        line-height:20px;
+        margin-bottom:15px;
+    }
+
+    strong{
+        color:$pink;
+        font-weight:bold;
+        font-size:22px;
+        display:block;
+    }
+
+    span{
+        display:block;
+        font-size:18px;
+        font-weight:500;
+        margin-top:5px;
+        text-transform:uppercase;
+        font-family:"Bebas Neue", sans-serif;
+    }
+}

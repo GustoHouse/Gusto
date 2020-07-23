@@ -43,7 +43,7 @@ class Conversation extends Component {
       options: {
         submitCallback: this.submitCallback,
         robotImage: G,
-        preventAutoFocus: false,
+        preventAutoFocus: true,
         preventAutoStart: true,
         userInterfaceOptions: {
           robot: {
