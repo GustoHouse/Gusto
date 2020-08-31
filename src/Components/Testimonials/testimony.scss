@@ -9,6 +9,7 @@
     float:left;
     width:80vw;
     clear:both;
+    cursor: pointer;
 
     &:nth-of-type(odd) {
         float: right;
@@ -43,6 +44,44 @@
         text-transform:uppercase;
         font-family:"Bebas Neue", sans-serif;
     }
+
+    .text {
+        max-height: 150px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+        transition:all 500ms ease;
+    
+        &:after {
+            content: '';
+            height: 150px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity:1;
+            transition:opacity 500ms ease;
+            width: 100%;
+            background: rgb(255,255,255);
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        }
+    }
+
+    &:hover{
+        .text{
+            max-height:165px;
+        }
+    }
+
+    &.open{
+        .text{
+            max-height:1000px !important;
+            
+            &:after{
+                opacity:0;
+            }
+        }
+    }
+    
 }
 
 @media(min-width:1024px){
@@ -55,11 +94,5 @@
                 line-height: 24px;
             }
         }
-    }
-}
-
-@media(min-width:1280px){
-    .testimonies{
-        margin-left:5vw;
     }
 }

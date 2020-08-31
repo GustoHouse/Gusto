@@ -19,7 +19,8 @@
     cf-input{
         background:transparent;
 
-        input[type="input"] {
+        input[type="input"],
+        input[type="email"] {
             background: #fff;
             border-radius: 15px;
             border: 2px solid black;

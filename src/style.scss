@@ -173,12 +173,13 @@ section{
     width:100%;
 	min-height:100vh;
 	padding:0 7vw;
+	z-index: 10;
 }
 
 @media(min-width:1024px){
 
 	section{
-		padding:0;
+		padding:10vh 0;
 
 		&.split{
 			display:flex;
@@ -199,6 +200,7 @@ section{
 			width: 100%;
 			max-width: 1600px;
 			clear:both;
+			margin:0 auto;
 		}
 
 	}

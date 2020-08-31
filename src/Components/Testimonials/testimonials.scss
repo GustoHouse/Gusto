@@ -35,17 +35,15 @@
 @media(min-width:1024px){
     .testimonials{
         h2{
-            display:block;
-            float:right;
-            margin-right:45px;
-
             strong{
                 animation: ANGLEIN 1s 1s ease backwards, BLUETEXTSHADOW 1s ease 1s both;
             }
         }
+    }
+}
 
-        .testimonies{
-            clear:both;
-        }
+@media(min-width:1280px){
+    .testimonies{
+        margin-left:auto;
     }
 }

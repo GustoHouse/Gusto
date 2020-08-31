@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Components/Header/header';
 import Background from './Components/Background/background';
 import Banner from './Components/Banner/banner';
+import Work from './Components/Work/work';
 import Testimonials from './Components/Testimonials/testimonials';
 import Contact from './Components/Contact/contact';
 import './style.scss';
@@ -33,6 +34,8 @@ class App extends Component {
         document.getElementsByTagName("html")[0].setAttribute("class","viewing-testimonials");
       }else if( isvisible( document.getElementById("convo-header") ) ){
         document.getElementsByTagName("html")[0].setAttribute("class","viewing-convo");
+      }else if( isvisible( document.getElementById("work-header") ) ){
+        document.getElementsByTagName("html")[0].setAttribute("class","viewing-work");
       }
     });
 
@@ -47,6 +50,8 @@ class App extends Component {
         <Header />
 
         <Banner />
+
+        <Work />
 
         <Testimonials />
 

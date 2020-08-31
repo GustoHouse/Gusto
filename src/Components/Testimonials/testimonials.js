@@ -59,7 +59,7 @@ class Testimonials extends Component {
               <strong>Tell You</strong>
           </h2>
 
-          <div class="testimonies">
+          <div className="testimonies">
 
             <Testimony content={gainesway} />
 

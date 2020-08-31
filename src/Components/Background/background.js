@@ -9,6 +9,7 @@ class Background extends Component {
             <svg className="bg-teal" viewBox="0 0 664 591" fill="none">
                 <path className="big-triangle" d="M5.16669e-05 2.98643e-06L664 591L0 591L5.16669e-05 2.98643e-06Z" fill="#2DDAD3"/>
                 <path className="green-fade" d="M4.6946e-05 54L603 591L0 591L4.6946e-05 54Z" fill="url(#tealfade)"/>
+                <path className="red-fade" d="M4.6946e-05 54L603 591L0 591L4.6946e-05 54Z" fill="url(#redfade)"/>
                 <path className="yellow-fade" d="M4.6946e-05 54L603 591L0 591L4.6946e-05 54Z" fill="url(#yellowfade)"/>
                 <path className="blue-fade" d="M4.6946e-05 54L603 591L0 591L4.6946e-05 54Z" fill="url(#bluefade)"/>
                 <defs>
@@ -22,6 +23,10 @@ class Background extends Component {
                   </linearGradient>
                   <linearGradient id="bluefade" x1="301.5" y1="591" x2="301.5" y2="54" gradientUnits="userSpaceOnUse">
                     <stop stopColor="#5980F7"/>
+                    <stop offset="1" stopColor="#2BCDC7" stopOpacity="0"/>
+                  </linearGradient>
+                  <linearGradient id="redfade" x1="301.5" y1="591" x2="301.5" y2="54" gradientUnits="userSpaceOnUse">
+                    <stop stopColor="rgb(255, 2, 85)"/>
                     <stop offset="1" stopColor="#2BCDC7" stopOpacity="0"/>
                   </linearGradient>
                 </defs>

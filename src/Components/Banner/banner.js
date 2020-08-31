@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import './banner.scss';
 
 class Banner extends Component {
+
+  goToConvo = () => {
+    document.querySelector('.contact').scrollIntoView({
+      behavior: 'smooth'
+    });
+  }
+
   render() {
       return (
         <section className="banner">
@@ -18,7 +25,7 @@ class Banner extends Component {
 
           <p>As internet architects, we design and build robust websites, online stores, web and mobile apps with passion and vigor.</p>
 
-          <a href="#start" className="btn">start building</a>
+          <button onClick={this.goToConvo} className="btn">start building</button>
 
         </section>
       );
