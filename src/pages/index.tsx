@@ -20,6 +20,7 @@ export default function Home() {
         <ThisIsTheWay />
         <Services />
         <Grid />
+        <section></section>
       </main>
     </>
   )
