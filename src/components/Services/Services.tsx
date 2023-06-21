@@ -1,7 +1,7 @@
 export default function Services() {
     return (
         <section id="services" className="services">
-            <div class="container">
+            <div className="container">
 
                 <h2>We'll handle <strong>everything.</strong></h2>
                 <p>We have experience across the board. Whatever your business needs online, we'll put our expertise to the task.</p>
@@ -71,7 +71,7 @@ export default function Services() {
                     </div>
 
                 </div>
-                
+
             </div>
         </section>
     )
