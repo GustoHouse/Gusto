@@ -3,6 +3,7 @@ import Grid from '../components/Grid/Grid'
 import Header from '../components/Header/Header'
 import Headline from '../components/Headline/Headline'
 import ThisIsTheWay from '@/components/ThisIsTheWay/ThisIsTheWay'
+import Services from '@/components/Services/Services'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Header />
         <Headline />
         <ThisIsTheWay />
+        <Services />
         <Grid />
       </main>
     </>

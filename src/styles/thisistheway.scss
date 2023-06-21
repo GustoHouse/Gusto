@@ -2,13 +2,40 @@
 
 .theway{
     .process{
+        @media(min-width:960px){
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;       
+            gap:5vw;
+        }
+
         > div{
             border-width:5px;
             border-style: solid;
             border-radius:30px 0 0 0;
             padding:30px;
-            margin-top:45px;
+            margin-top:75px;
             background:#fff;
+            position:relative;
+
+            @media(min-width:960px){
+                flex-grow:1;
+                width:33%;
+            }
+
+            > svg{
+                position: absolute;
+                width: auto;
+                height: 75%;
+                left: 0;
+                top: 0;
+                transform: translate(-12%, -12%);
+
+                @media(min-width:960px){
+                    height:auto;
+                    width:75%;
+                }
+            }
         }
 
         h3{
@@ -18,6 +45,10 @@
         .setup{
             border-color:$red;
 
+            > svg rect{
+                fill: $red;
+            }
+
             h3 strong{
                 color:$red;
             }
@@ -26,6 +57,10 @@
         .requests{
             border-color:$green;
 
+            > svg rect{
+                fill: $green;
+            }
+
             h3 strong{
                 color:$green;
             }
@@ -33,6 +68,10 @@
 
         .updates{
             border-color:$blue;
+
+            > svg rect{
+                fill: $blue;
+            }
 
             h3 strong{
                 color:$blue;
