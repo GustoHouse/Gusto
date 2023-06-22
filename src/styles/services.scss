@@ -1,4 +1,5 @@
 .services{
+
     .lists{
         margin-top:30px;
         width:100%;
@@ -52,6 +53,39 @@
                     margin-top: 15px;
                 }
             }
+        }
+    }
+
+    .awards{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:90px;
+
+        > svg{
+            height:100%;
+            width:auto;
+            margin-right:30px;
+        }
+
+        > div{
+
+            p{
+                font-size:14px;
+                width:250px;
+                margin-bottom:15px;
+                margin-top:0px;
+            }
+
+            svg{
+                height:40px;
+                width:auto;
+
+                &:first-of-type{
+                    margin-right:15px;
+                }
+            }
+
         }
     }
 }

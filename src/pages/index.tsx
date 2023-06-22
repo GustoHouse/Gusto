@@ -20,7 +20,7 @@ export default function Home() {
         <ThisIsTheWay />
         <Services />
         <Grid />
-        <section>test</section>
+        <section></section>
       </main>
     </>
   )

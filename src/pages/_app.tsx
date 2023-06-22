@@ -1,5 +1,6 @@
 import '@/styles/global.scss'
 import '@/styles/grid.scss'
+import '@/styles/header.scss'
 import '@/styles/thisistheway.scss'
 import '@/styles/services.scss'
 
