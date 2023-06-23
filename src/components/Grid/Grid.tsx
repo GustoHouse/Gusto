@@ -21,6 +21,10 @@ export default function Grid() {
             }
         });
 
+        tl.set(gridRef.current, {
+            x: "-50%"
+        });
+
         tl.to(gridRef.current, {
             y: "-100"
         });
