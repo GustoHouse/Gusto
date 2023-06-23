@@ -7,6 +7,7 @@ import Services from '@/components/Services/Services'
 import Design from '@/components/Design/Design'
 import Pricing from '@/components/Pricing/Pricing'
 import Questions from '@/components/Questions/Questions'
+import Talk from '@/components/Talk/Talk'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Design />
         <Pricing />
         <Questions />
+        <Talk />
         <Grid />
         <section></section>
       </main>
