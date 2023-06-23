@@ -48,16 +48,6 @@ export default function Services() {
                     </div>
 
                     <div>
-                        <strong>Biz Ops</strong>
-
-                        <ul>
-                            <li>CRM Integration</li>
-                            <li>Lead Gen</li>
-                            <li>Process Automation</li>
-                        </ul>
-                    </div>
-
-                    <div>
                         <strong>Branding</strong>
 
                         <ul>
@@ -66,9 +56,21 @@ export default function Services() {
                             <li>Business Cards</li>
                             <li>Stationary</li>
                             <li>Brochures</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <strong>Biz Ops</strong>
+
+                        <ul>
+                            <li>CRM Integration</li>
+                            <li>Lead Gen</li>
+                            <li>Process Automation</li>
                             <li>...and more!</li>
                         </ul>
                     </div>
+
+                    
 
                 </div>
 

@@ -3,6 +3,8 @@ import '@/styles/grid.scss'
 import '@/styles/header.scss'
 import '@/styles/thisistheway.scss'
 import '@/styles/services.scss'
+import '@/styles/design.scss'
+import '@/styles/pricing.scss'
 
 import type { AppProps } from 'next/app'
 

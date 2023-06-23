@@ -4,6 +4,8 @@ import Header from '../components/Header/Header'
 import Headline from '../components/Headline/Headline'
 import ThisIsTheWay from '@/components/ThisIsTheWay/ThisIsTheWay'
 import Services from '@/components/Services/Services'
+import Design from '@/components/Design/Design'
+import Pricing from '@/components/Pricing/Pricing'
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <Headline />
         <ThisIsTheWay />
         <Services />
+        <Design />
+        <Pricing />
         <Grid />
         <section></section>
       </main>
