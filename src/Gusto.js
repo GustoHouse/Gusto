@@ -1,9 +1,16 @@
 import './global.scss';
+import Grid from './Components/Grid/Grid';
+import Headline from './Components/Headline/Headline';
+import ThisIsTheWay from './Components/ThisIsTheWay/ThisIsTheWay';
+import Services from './Components/Services/Services';
 
 function Gusto() {
   return (
     <div>
-      test
+      <Headline />
+      <ThisIsTheWay />
+      <Services />
+      <Grid />
     </div>
   );
 }
