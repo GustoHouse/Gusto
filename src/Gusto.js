@@ -1,5 +1,6 @@
 import './global.scss';
 import Grid from './Components/Grid/Grid';
+import Header from './Components/Header/Header';
 import Headline from './Components/Headline/Headline';
 import ThisIsTheWay from './Components/ThisIsTheWay/ThisIsTheWay';
 import Services from './Components/Services/Services';
@@ -11,6 +12,7 @@ import Talk from './Components/Talk/Talk';
 function Gusto() {
   return (
     <div>
+      <Header />
       <Headline />
       <ThisIsTheWay />
       <Services />
