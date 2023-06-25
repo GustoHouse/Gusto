@@ -1,6 +1,13 @@
 import './ThisIsTheWay.scss';
 
 export default function ThisIsTheWay() {
+
+    const handleBtnClick = (e, target) => {
+        e.preventDefault();
+
+        document.getElementById(target).scrollIntoView({ behavior: 'smooth' });
+    }
+
     return (
         <section id="theway" className="theway">
             <div className="container">
@@ -266,7 +273,7 @@ export default function ThisIsTheWay() {
                     </div>
                 </div>
 
-                <a className="link">What can I request?</a>
+                <a onClick={(e) => handleBtnClick(e, 'services')} className="link">What can I request?</a>
 
             </div>
         </section>

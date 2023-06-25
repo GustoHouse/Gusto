@@ -13,20 +13,16 @@ export default function Talk() {
             'cf-questions': 'Hello!'
         },
         {
-            'tag': 'cf-robot-message',
-            'cf-questions': 'To kick off this conversation, how about a fun question?'
-        },
-        {
-          'tag': 'input',
-          'type': 'text',
-          'name': 'movie',
-          'cf-questions': '<strong>What is one of your favorite movies?</strong>'
+            'tag': 'input',
+            'type': 'text',
+            'name': 'movie',            
+            'cf-questions': 'To kick off this conversation, how about a fun question? <strong>What is one of your favorite movies?</strong>'
         },
         {
             'tag': 'input',
             'type': 'text',
             'name': 'name',
-            'cf-questions': 'Cool! Now that the movie talk is over, we would like to know how to address you. <strong>Mind telling us your name?</strong>' 
+            'cf-questions': 'Cool! Now that the movie talk is over, we would like to get to know a little about you. <strong>First, how should we address you?</strong>' 
         },
         {
           'tag': 'input',
@@ -38,7 +34,7 @@ export default function Talk() {
           'tag': 'input',
           'type': 'text',
           'name': 'reason',
-          'cf-questions': 'Now in a just a short sentence or two, could you let us know why you are reaching out today? <strong>What kind of help are you looking for?</strong>'
+          'cf-questions': 'Now in a just a short sentence or two, could you let us know why you are reaching out today? <strong>What sort of questions are you looking to get answered or what kind of extra information are you seeking?</strong>'
         },
         {
           'tag': 'input',
