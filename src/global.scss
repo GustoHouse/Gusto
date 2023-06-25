@@ -74,12 +74,12 @@ h1, h2{
 
     + p{
         text-align: left;
-        font-size:20px;
+        font-size:22px;
 
         @media(min-width:768px){
-            max-width:450px;
+            max-width:500px;
             text-align:center;
-            font-size:24px;
+            font-size:26px;
         }
     }
 }
@@ -88,6 +88,10 @@ h1{
     font-size:calc(30px + 3vw);
     max-width: calc(600px + 15vw);
     margin-bottom:1vw;
+
+    + p{
+        max-width:600px;
+    }
 
     strong{
         color: $green;
@@ -117,21 +121,17 @@ h3{
 }
 
 p{
-    font-size:16px;
+    font-size:18px;
     line-height:1.5;
     margin-top:30px;
     text-align: left;
-
-    @media(min-width:1024px){
-        font-size:18px;
-    }
 }
 
 ul{
     li{
         line-height:1.5;
         font-weight:500;
-        font-size:16px;        
+        font-size:18px;        
     }
 }
 

@@ -45,6 +45,12 @@ export default function Header() {
                 </defs>
             </svg>
 
+            <button className="navicon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
         </header>
     )
 }
