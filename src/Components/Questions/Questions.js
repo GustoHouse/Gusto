@@ -64,7 +64,7 @@ export default function Questions() {
 
                     <FrequentQuestion
                       question="Are there refunds?"
-                      answer="Due to the effort involved, level of experience, and quality of output, we do not offere refunds. With the monthly plan however you may pause, cancel, and renew at any time."
+                      answer="Due to the effort involved, level of experience, and quality of output, we do not offer refunds. However, with the monthly plan you may pause, cancel, and renew at any time."
                     />
 
                 </div>
