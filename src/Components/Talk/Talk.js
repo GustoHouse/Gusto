@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { ConversationalForm } from 'conversational-form';
+
 import G from './g.svg';
 import './Talk.scss'
 
@@ -17,12 +18,12 @@ export default function Talk() {
             'type': 'text',
             'name': 'movie',            
             'cf-questions': 'To kick off this conversation, how about a fun question? <strong>What is one of your favorite movies?</strong>'
-        },
+        },      
         {
             'tag': 'input',
             'type': 'text',
             'name': 'name',
-            'cf-questions': 'Cool! Now that the movie talk is over, we would like to get to know a little about you. <strong>First, how should we address you?</strong>' 
+            'cf-questions': 'Now onto business. First, we would like to know just a little about you. <strong>What would be an appropriate name to address you by?</strong>' 
         },
         {
           'tag': 'input',
@@ -34,13 +35,13 @@ export default function Talk() {
           'tag': 'input',
           'type': 'text',
           'name': 'reason',
-          'cf-questions': 'Now in a just a short sentence or two, could you let us know why you are reaching out today? <strong>What sort of questions are you looking to get answered or what kind of extra information are you seeking?</strong>'
+          'cf-questions': 'Now in a just a short sentence or two, could you <strong>let us know why you are reaching out today?</strong>'
         },
         {
           'tag': 'input',
           'type': 'email',
           'name': 'email',
-          'cf-questions': 'Lastly, <strong>if you could give us your email address</strong> so we could reach back out to you, that would be awesome.'
+          'cf-questions': 'Lastly, <strong>if you would give us your email address</strong> so we could reach back out to you, that would be awesome.'
         }
     ];
 
@@ -56,6 +57,8 @@ export default function Talk() {
         
                 if(content === 'Star Wars' || content === 'The Empire Strikes Back' || content === 'Return of the Jedi'){
                   cf.addRobotChatResponse("What an excellent answer. We're big Star Wars fans ourselves.");
+                }else{
+                  cf.addRobotChatResponse("Very cool! Film is definitely one of our favorite topics.");
                 }
         
                 break;
@@ -72,8 +75,10 @@ export default function Talk() {
 
             setTimeout(function(){
               console.log('now');
-              document.getElementsByTagName('input')[0].focus();
-            },1000);
+              if(document.getElementsByTagName('input')[0]){
+                document.getElementsByTagName('input')[0].focus();
+              }
+            },3000);
 
             success();
         
@@ -90,10 +95,10 @@ export default function Talk() {
               reply_to: formDataSerialized.email
             };
         
-            /*window.emailjs.send('gmail','gusto_convo',message).then(res => {
+            window.emailjs.send('gmail','gusto_convo',message).then(res => {
                 console.log('Email successfully sent!')
               })
-              .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)); */
+              .catch(err => console.error('Oh well, you failed. Here some thoughts on the error that occured:', err)); 
 
         }
 

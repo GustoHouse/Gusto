@@ -12,7 +12,7 @@ export default function Pricing() {
 
                     <div className="oldway">
                         <h3>The Old Way</h3>
-                        <p>The average cost ($120k per year salary plus benefits) of hiring <strong>one senior designer or developer.</strong></p>
+                        <p>The average cost ($100k per year salary plus benefits) of hiring <strong>one senior designer or developer.</strong></p>
                     </div>
 
                     <div className="newway">

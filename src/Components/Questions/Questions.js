@@ -32,37 +32,37 @@ export default function Questions() {
                     
                     <FrequentQuestion
                         question="Couldn't I just hire a full-time designer and developer?"
-                        answer="Good question! For starters, the annual cost of a full-time senior-level designer now exceeds $100,000, plus benefits (and good luck finding one available). Aside from that, you may not always have enough work to keep them busy at all times, so you're stuck paying for time you aren't able to utilize. With the monthly plan, you can pause and resume your subscription as often as you need to ensure you're only paying your designer when you have work available for them."
+                        answer="Great question! To begin with, the price tag for hiring a single senior-level designer or developer on a full-time basis now surpasses $100,000 per year, not to mention the additional costs of benefits (and good luck finding an available one). Moreover, there may be occasions when you don't have a constant stream of work to keep them occupied, meaning you would end up paying for their idle time. On the other hand, with the monthly plan, you have the flexibility to pause and resume your subscription as frequently as necessary, ensuring that you only pay for your designer's services when you actually have work for them."
                     />
 
                     <FrequentQuestion
                         question="How many requests can I have in the queue?"
-                        answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        answer="The limit does not exist! Keep piling them into the queue and we'll take care of them in the order you prioritize them."
                     />
                             
                     <FrequentQuestion
                       question="How do I submit requests?"
-                      answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      answer="Once you've signed up, you'll quickly get an invite to our simple project managment system. Once you're in, you'll be able to add tasks into our queue. You can also check progress, leave comments, and reprioritize on the fly. But don't worry you don't have to stay constantly logged in to keep up to date. You'll get notifications every time we leave updates on the requests. If you'd like a demo of this process, please contact us and we'd be happy to set one up for you."
                     />
             
                     <FrequentQuestion
                       question="How quickly will my projects get done?"
-                      answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      answer="This varies significantly depending on the size of the request. One of the first things we'll do when you submit a larger request is break down the project into the individual tasks necessary to complete it. These tasks will typically take 3-5 days to complete and you will never go a week without a progress update as long as there is an active item in the queue."
                     />
 
                     <FrequentQuestion
-                      question="Who will actually be working on my design and development work?"
-                      answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      question="Who will actually be working on my design and development requests?"
+                      answer="Just us! We are Carl Michel and Ty Goss, the two founders of Gusto Creative House and the two design and development experts who will be working with you. Nice to meet you!"
                     />
 
                     <FrequentQuestion
                       question="What if I'm not quite happy with the end result?"
-                      answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      answer="The beautiful thing about this process is it's only the end result when you say it's the end result. So we'll keep at it - keep iterating and collaborating with you for as long as you'd like. Once you're happy with the state it's in, we'll move on to the next request in the queue."
                     />
 
                     <FrequentQuestion
                       question="Are there refunds?"
-                      answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                      answer="Due to the effort involved, level of experience, and quality of output, we do not offere refunds. With the monthly plan however you may pause, cancel, and renew at any time."
                     />
 
                 </div>
