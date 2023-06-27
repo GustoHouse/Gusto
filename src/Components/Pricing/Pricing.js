@@ -96,7 +96,7 @@ export default function Pricing() {
                             <li>We can start today</li>
                         </ul>
 
-                        <a href="https://buy.stripe.com/test_28ocNu7iNbueh0YcMM" target="_blank" className="btn">Start Today</a>
+                        <a href="https://buy.stripe.com/4gw4iC7Qt0vY4xi6oo" target="_blank" className="btn">Start Today</a>
 
                         <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clipPath="url(#clip0_114_859)">
@@ -146,7 +146,7 @@ export default function Pricing() {
                                 <li><strong>Save $500 per month</strong> when you sign up for our quarterly plan.</li>
                             </ul>
 
-                            <a href="https://buy.stripe.com/test_3cs3cUcD72XIbGE145" target="_blank" className="btn">Go Quarterly</a>
+                            <a href="https://buy.stripe.com/3cs6qK7QtemOfbW9AB" target="_blank" className="btn">Go Quarterly</a>
 
                             <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_114_859)">
@@ -193,7 +193,7 @@ export default function Pricing() {
                                 <li><strong>Save $1000 per month</strong> when you sign up for our yearly plan.</li>
                             </ul>
 
-                            <a href="https://buy.stripe.com/test_8wMeVCbz341M4ec4gi" target="_blank" className="btn">Go Yearly</a>
+                            <a href="https://buy.stripe.com/fZebL4daNemO1l6bIK" target="_blank" className="btn">Go Yearly</a>
 
                             <svg width="94" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clipPath="url(#clip0_114_859)">
