@@ -93,7 +93,7 @@ export default function Header() {
                     Got Questions?
                 </a>
                 <a href="#talk" onClick={(e) => handleNavClick(e, 'talk')}>
-                    Let's Chat
+                    Let's Talk
                 </a>
             </nav>
         </>
