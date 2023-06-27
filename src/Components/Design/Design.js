@@ -36,7 +36,9 @@ export default function Design() {
             <div className="container">
 
                 <h2>It's all by <strong>design.</strong></h2>
-                <p>We have design and development experience in a wide range of industries.</p>
+                {/*<p>We have design and development experience in a wide range of industries.</p>*/}
+
+                <cite>"Ty and Carl distilled everything we wanted to achieve with our website redesign into a clear vision and plan. They considered the nuances of our unique business and built creative, elegant solutions that improved how our clients experience and interact with the site. The analytics tell us the new site is a huge success, and the compliments keep rolling in from inside and outside our industry."<strong>Ian Tapp // Gainesway</strong></cite>
 
                 <div className="portfolio">
 

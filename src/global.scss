@@ -82,6 +82,29 @@ h1, h2{
             font-size:26px;
         }
     }
+
+    + cite {
+        font-size: 18px;
+        line-height: 1.5;
+        max-width: 750px;
+        font-style:normal;
+        display:block;
+        margin-top:30px;
+        text-align:left;
+
+        @media(min-width:768px){
+            text-align: center;
+        }
+
+        strong{
+            display:block;
+            font-weight:bold;
+            text-transform:uppercase;
+            font-size:15px;
+            display:block;
+            margin-top:15px;
+        }
+    }
 }
 
 h1{

@@ -6,7 +6,9 @@ export default function Pricing() {
             <div className="container">
 
                 <h2>Our simple,<br /><strong>affordable</strong> pricing.</h2>
-                <p>Normally design and development work at this level costs a fortune. Not anymore.</p>
+                
+                {/*<p>Normally design and development work at this level costs a fortune. Not anymore.</p>*/}
+                <cite>"I found Carl and Ty easy to work with and appreciated the way the business relationship felt like a partnership geared towards win/win solutions. They provided high quality work at a fair price (and the end result was a big hit with our customers and internal stakeholders)."<strong>Phil Aldridge // ORR Safety</strong></cite>
 
                 <div className="tiers">
 

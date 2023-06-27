@@ -6,7 +6,9 @@ export default function Services() {
             <div className="container">
 
                 <h2>We'll handle <strong>everything.</strong></h2>
-                <p>We have experience across the board. Whatever your business needs online, we'll put our expertise to the task.</p>
+                {/*<p>We have experience across the board. Whatever your business needs online, we'll put our expertise to the task.</p>*/}
+
+                <cite>"Tyler and Carl are the unicorns of developers combining a cornucopia of highly sought-after qualities and skills including but not limited to: exceptional creativity, the utmost professionalism, exemplary communication, and thoughtful guidance."<strong>Jim & Jess Zimmer // Zimmer Design</strong></cite>
 
                 <div className="lists">
 

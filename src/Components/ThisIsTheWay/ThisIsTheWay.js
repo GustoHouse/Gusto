@@ -13,7 +13,9 @@ export default function ThisIsTheWay() {
             <div className="container">
 
                 <h2>This is <strong>the way.</strong></h2>
-                <p>Our process is special because it's simple. You'll never want to go back.</p>
+                {/*<p>Our process is special because it's simple. You'll never want to go back.</p>*/}
+
+                <cite>"We've been working with Ty & Carl at Gusto for over two years. In that time, they have become like an extension of our in-house marketing team."<strong>Kelly Beckstedt // Health Carousel</strong></cite>
 
                 <div className="process">
                     <div className="setup">
@@ -98,8 +100,8 @@ export default function ThisIsTheWay() {
                             <rect x="35" width="5" height="5" rx="2.5" />
                         </svg>
 
-                        <h3><strong>Instant</strong> Setup</h3>
-                        <p>Once you've subscribed, we'll fire up our AI powered automated setup. You'll instantly get invited to your brand new project request board where all updates funnel back and forth.</p>
+                        <h3>Start <strong>Today</strong></h3>
+                        <p>Once you've subscribed, we'll fire up our AI powered automated setup. You'll quickly get invited to your brand new project request board where all updates funnel back and forth.</p>
                     </div>
                     <div className="requests">
 
