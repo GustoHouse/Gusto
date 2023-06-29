@@ -16,3 +16,14 @@
     }
 
 }
+
+.tiles{
+    polygon{
+        opacity:0;
+        transition:opacity 3s ease;
+
+        &.lit{
+            opacity:1;
+        }
+    }
+}

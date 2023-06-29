@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Gusto from './Gusto';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga4';
+
+ReactGA.initialize("G-LQYKJKV56R");
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

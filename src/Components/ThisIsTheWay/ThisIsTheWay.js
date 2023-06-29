@@ -271,7 +271,7 @@ export default function ThisIsTheWay() {
                         </svg>
 
                         <h3><strong>Quick</strong> Updates</h3>
-                        <p>Constant communication is absolutely essential for success. You will be updated through the request board every 2-3 days, and many requests may even be completed in that time.</p>
+                        <p>Constant communication is absolutely essential for success. You will be updated through the request board every 3-5 days, and many requests may even be completed in that time.</p>
                     </div>
                 </div>
 
