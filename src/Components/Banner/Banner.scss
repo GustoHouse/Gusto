@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+@keyframes BANNER {
+    from {transform:translateY(100%)}
+    to {transform:translateY(0%)}
+}
+
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $red;
+    color: white;
+    padding: 15px 5px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 13px;
+    cursor:pointer;
+    z-index: 1000;
+    text-decoration: none;
+    animation: BANNER 1s ease backwards;
+
+    @media(min-width:1024px){
+        font-size:16px;
+    }
+
+    strong{
+        font-weight:900;
+    }
+
+    code{
+        background:white;
+        padding:3px 10px;
+        color:$black;
+        display:inline-block;
+        margin-left:3px;
+        border-radius:3px;
+        font-weight:bold;
+        font-family:monospace;
+    }
+}

@@ -8,6 +8,7 @@ import Design from './Components/Design/Design';
 import Pricing from './Components/Pricing/Pricing';
 import Questions from './Components/Questions/Questions';
 import Talk from './Components/Talk/Talk';
+import Banner from './Components/Banner/Banner';
 
 function Gusto() {
   return (
@@ -18,8 +19,11 @@ function Gusto() {
       <Services />
       <Design />
       <Pricing />
-      <Questions />
+      <Questions />      
       <Talk />
+
+      <Banner />
+
       <Grid />
     </div>
   );
