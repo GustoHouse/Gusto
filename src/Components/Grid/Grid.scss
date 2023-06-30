@@ -8,8 +8,8 @@
     transform: translateX(-50%);
 
     @media screen and (orientation:portrait) { 
-        height: 45vh;
-        width: calc(45vh * 3.6);
+        height: 25vh;
+        width: calc(25vh * 3.6);
     }
 
     @media screen and (orientation:landscape) { 
