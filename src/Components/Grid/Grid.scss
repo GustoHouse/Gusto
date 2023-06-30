@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 .grid{
     z-index: -1;
     position: fixed;
@@ -18,12 +20,7 @@
 }
 
 .tiles{
-    polygon{
-        opacity:0;
-        transition:opacity 3s ease;
-
-        &.lit{
-            opacity:1;
-        }
+    path{
+        transition:fill 3s ease;
     }
 }
