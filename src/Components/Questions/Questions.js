@@ -25,7 +25,7 @@ export default function Questions() {
         <section id="questions" className="questions">
             <div className="container">
 
-                <h2>Still have questions?<br />We have <strong>answers.</strong></h2>
+                <h2>Have more <strong>questions?</strong></h2>
                 {/*<p>There's plenty of nuance that helps make our process successful.</p>*/}
 
                 <cite>"Tyler and Carl are great to work with, will answer all questions, and are quick to take action when needed."<strong>Tom LaMarra // MTHA</strong></cite>
