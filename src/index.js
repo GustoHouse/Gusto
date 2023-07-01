@@ -2,9 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Gusto from './Gusto';
 import reportWebVitals from './reportWebVitals';
-import ReactGA from 'react-ga4';
+import TagManager from 'react-gtm-module'
 
-ReactGA.initialize("G-LQYKJKV56R");
+const tagManagerArgs = {
+  gtmId: 'GTM-PFBM32W'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
